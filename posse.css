@@ -6,22 +6,22 @@ html{
 
 }
 *{
- margin: 0px;
+    max-width: 100%;
  padding: 0px;
- 
-    
-}
-body{
-overflow-x: hidden;
-max-width: 1440px;
-height: auto;
+ margin: 0px;   
 }
 header{
+
+    background-color: #FFFFFF;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0px;
     display:flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     padding: 15px 24px;
+    z-index: 1000;
 }
 .posse_logo img{
     vertical-align: bottom;
@@ -29,7 +29,6 @@ header{
 .header_inner{
 display: flex;
 align-items: center;
-margin-left: auto;
 }
 header ul{
     list-style: none;
@@ -40,7 +39,7 @@ header li{
 }
 .header_nav{
     display: block;
-    
+    align-items: left;
 }
 .header_nav_list{
     display: flex;
@@ -77,10 +76,18 @@ font-family: 'Noto Sans JP', sans-serif;
     vertical-align: middle;
 }
 #insta{
+    border:1px solid ;
+    border-color:#EFF2F5 ;
+    border-radius: 50% ;
+    background-position:50%,70%,50%,50%;
     background-image: url(./assets/img/icon/icon-instagram.svg);
 
 }
 #twitter{
+    border:1px solid ;
+    border-color: #EFF2F5;
+    border-radius: 50% ;
+    background-position: 50%,70%,50%,50% ;
     background-image: url(./assets/img/icon/icon-twitter.svg);
 
 }
@@ -99,7 +106,7 @@ font-family: 'Noto Sans JP', sans-serif;
 .text{
     position: relative;
     width: 400px;
-    height: 160px;
+    height: 200px;
     right: 62px;
     left: 63px;
     top: 40px;
@@ -125,6 +132,7 @@ color: #0071BC;
     font-family: 'Noto Sans JP';
 font-style: normal;
 font-weight: 700;
+z-index: 5;
 
 color: #333333;
 }
@@ -136,67 +144,83 @@ left: 80px;
 top: 198px;
 background: #EFF2F5;
 border-radius: 24px;
+z-index: 4;
 
+}
+.main_1_list_item{
+    position: absolute;
+    display:inline-flex;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    height:21px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    width: 88px;
+    top: 635px;
+    font-style: bold;
+    left: 24px;
+
+    list-style: auto;
 }
     
 
 .phot{
     background-color: #FFFFFF;
-
-}
-.phot img{
-    position: absolute;
-    z-index: 1;
+background-image: url(./assets/img/img-hero.jpg);
+background-size: contain;
+position: absolute;
+z-index: 2;
 width: 976px;
 height: 680px;
 right: 0px;
 top: 0px;
 border-radius: 80px 0px 0px 80px;
 }
-.rectangle1{
-    background: #EFF2F5;
-border-radius: 24px;
 
-position: absolute;
-width: 500px;
-height: 281px;
-left: 80px;
-top: 198px;
-z-index: 2;
+.main_2{
+    position: absolute;
+    margin-top: 96px;
+
+    width: 100%;
+
 }
 .posse_title{
+top: 700px;
+display: inline-block;
+    text-align: center;
+    font-size: 24px;
+line-height: 1.5;
+letter-spacing: 0.05em;
 position: absolute;
-width: 191px;
 height: 54px;
-top: 856px;
-right: 50%;
-left: 50%;
-bottom: 1320px;
-display: flex;
-}
-.posse_title  h1{
-    font-size: 34px;
-    text-align: center;
-    font: bold;
+width: 100%;
 
 }
-.posse_title p{
-    text-align: center;
-    display: flex;
-
-
+.posse_title_item p{
+letter-spacing: initial;
+font-size: 15px;
+color: #0071BC;
+display: block;
+font-family: 'Plus Jakarta Sans', sans-serif;
+line-height: 1.8;
+margin-top: 8px;
 }
+
+
+
  
 .posse_body{
     display: flex;
+    gap: 40px;
 }
 .posse_body img{ 
     position: absolute;
     width: 472px;
     height: 312px;
     left: 228px;
-    top: 986px;
+    top: 900px;
     right: 700px;
+    border-radius: 16px;
 
 }
  .text2{
@@ -205,10 +229,12 @@ display: flex;
     position: absolute;
     width: 472px;
     height: 175px;
-    top: 1050px;
+    top: 950px;
     left: 740px;
-    line-height: 25.2px;
-    
+    font-style: solid;
+    line-height: 1.8;
+    font-size: 14px;
+    font-family: 'Noto Sans JP', sans-serif;
 
  }
 .main_3{
@@ -226,7 +252,7 @@ right: 0%;
 top: 0%;
 bottom: 0.28%;
 
-/* primary */
+
 mix-blend-mode: normal;
 opacity: 0.9;
 border-radius: 48px;
@@ -270,3 +296,24 @@ font-size: 14px;
 line-height: 160%;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+
+}
+.fotter_inner{
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
