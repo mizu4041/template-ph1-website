@@ -238,15 +238,23 @@ margin-top: 8px;
 
  }
 .main_3{
-
+    margin-top: 140px;
+padding: 0,24px;
     position: absolute;
     width: 984px;
     height: 358px;
     left: 230px;
     top: 1438px;
+    background-image: url(./assets/img/bg-line.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 48px;
+    color: #FFFFFF;
 }
 .line{
     position: absolute;
+    
+    background-color: #0071BC;
 left: 0%;
 right: 0%;
 top: 0%;
@@ -256,7 +264,6 @@ bottom: 0.28%;
 mix-blend-mode: normal;
 opacity: 0.9;
 border-radius: 48px;
-background-image: url(/assets/img/bg-line.jpg);
 }
 .line img{
     position: absolute;
@@ -267,11 +274,12 @@ bottom: 66.2%;
 display: inline-block;
 }
 .line h2{
+    display: flex;
     position: absolute;
-    width: 400px;
-    height: 280px;
-    left: 39.23%;
-    right: 62.7%;
+    width: 100%;
+    height: 65px;
+    justify-content: center;
+    
     top: 20.63%;
     bottom: 66.2%;
 font-family: 'Noto Sans JP';
@@ -280,20 +288,73 @@ font-weight: 700;
 font-size: 36px;
 line-height: 180%;
 }
-.line p{
-
+.line_logo{
+    background-image: url(./assets/img/icon/icon-line.svg);
+    width: 40px;
+    height: 40px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #FFFFFF;
+    text-align: center;
+    margin-right: 10px;
+    margin-top: 16px;
+}
+.line_contents{
+    width: 100%;
+    height: 80px;
+    display: inline-block;
     position: absolute;
-left: 22.87%;
-right: 22.76%;
 top: 41.62%;
 bottom: 39.94%;
 padding-top: 20px;
+
+}
+.line p{
+
+    
 text-align: center;
 font-family: 'Noto Sans JP';
 font-style: normal;
 font-weight: 700;
 font-size: 14px;
 line-height: 160%;
+
+}
+.button{
+    margin-top: 16px;
+    height: 50px;
+    display: inline-block;
+    position: relative;
+    top:253px ;
+    width: 100%;
+    
+
+}
+.button a{
+    background-color: #fff;
+    z-index: 2;
+    border-radius: 50px;
+    color: #333;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    line-height: 1.8;
+    max-width: 320px;
+    padding: 12px;
+    position: relative;
+width: 100%;
+    
+
+
+   
+}
+.u_icon_link{
+    background-image: url(./assets/img/icon/icon-link-dark.svg);
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    width: 14px;
+    height: 14px;
 }
 
 
