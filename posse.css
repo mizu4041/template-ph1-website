@@ -147,20 +147,28 @@ border-radius: 24px;
 z-index: 4;
 
 }
-.main_1_list_item{
+.mian_scoroll_down{
     position: absolute;
-    display:inline-flex;
     text-align: center;
     font-size: 14px;
     font-weight: 400;
     height:21px;
     font-family: 'Plus Jakarta Sans', sans-serif;
-    width: 88px;
-    top: 635px;
+    width: 120px;
+    top: 640px;
+    list-style: none;
     font-style: bold;
-    left: 24px;
-
-    list-style: auto;
+    left: -420px;
+    padding: 0;
+    
+}
+.mian_scoroll_down::before{
+    content:"";
+    width: 10px;
+    height: 10px;
+    right: 5px;
+    background-color: #ADADAD;
+    border-radius: 50%;
 }
     
 
