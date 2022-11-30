@@ -184,6 +184,7 @@ header li {
 .main_scroll_down::before {
     content:url(./scroll_nav.svg);
     position: absolute;
+    z-index: 2;
     top: 640px;
     left: -427px;
     width: 15px;
