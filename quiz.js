@@ -1,8 +1,8 @@
 
 //var array_1 =[document.getElementsByClassName("button_select-1"),document.getElementsByClassName("button_select-2"),document.getElementsByClassName("button_select-3")];
-const correct_select_1_q1 = document.getElementById("button_select-1");
-var correct_select_2_q1 = document.getElementById("button_select-2");
-var correct_select_3_q1 = document.getElementById("button_select-3");
+const correct_select_1_q1 = document.getElementById("button_select-1-q1");
+var correct_select_2_q1 = document.getElementById("button_select-2-q1");
+var correct_select_3_q1 = document.getElementById("button_select-3-q1");
 
 function reset_correct(){
     const correct = document.getElementsByClassName("button_answer");
