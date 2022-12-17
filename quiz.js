@@ -4,29 +4,9 @@ const correct_select_1_q1 = document.getElementById("button_select-1-q1");
 var correct_select_2_q1 = document.getElementById("button_select-2-q1");
 var correct_select_3_q1 = document.getElementById("button_select-3-q1");
 
-function reset_correct(){
-    const correct = document.getElementsByClassName("button_answer");
-    console.log(correct);
-    const elementsArray = Array.from(correct);
-    console.log(elementsArray);
-    elementsArray.forEach(function (value) {
-        console.log(value);
-        value.setAttribute("disabled");
-    });
-}
-function reset_mistake(){
-    const mistake = document.getElementsByClassName("button_answer-f");
-        console.log(mistake);
-        const elementsArray_1 = Array.from(mistake);
-        console.log(elementsArray_1);
-        elementsArray_1.forEach(function (value) {
-            console.log(value);
-          value.setAttribute("disables");
-        });
-}
+
 function select_true(a) {
     function correct() {
-        reset_mistake();
         const correct = document.getElementsByClassName("button_answer");
         console.log(correct);
         const elementsArray = Array.from(correct);
@@ -41,9 +21,8 @@ function select_true(a) {
     }
     a.addEventListener("click", correct);
 }
-function select_false(a) {
+function select_false(a){
     function mistake() {
-        reset_correct();
         const mistake = document.getElementsByClassName("button_answer-f");
         console.log(mistake);
         const elementsArray_1 = Array.from(mistake);
