@@ -40,3 +40,7 @@ function select_false(a){
 select_true(correct_select_1_q1);
 select_false(correct_select_2_q1);
 select_false(correct_select_3_q1);
+if(select_true(correct_select_1_q1)){
+    correct_select_2_q1.disabled=true;
+    correct_select_3_q1.disabled=true;
+}
